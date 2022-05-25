@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;1,700&family=PT+Serif:wght@400;700&family=Poppins:wght@100;200;500;700&family=Red+Hat+Mono:wght@500&display=swap');
+
+h2{
+    background-color: #881888;
+    border: 0px solid;
+    padding: 10px;
+    box-shadow: 0px 5px 8px rgba(0,0,0,0.6);
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    text-align: center;
+
+  }
+  thead{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #967BB6;
+}
+tbody{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: #000;
+}
+

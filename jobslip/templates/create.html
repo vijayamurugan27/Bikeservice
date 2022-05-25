@@ -1,0 +1,56 @@
+<html>
+  {% load static %}
+  <head>
+    <title>service jobslip</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+    <meta name="viewport" content="width= device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
+</head>
+<body >
+  <h1>Job Slip Form</h1>
+  <form method = 'POST'  >
+    {{form.as_p}} {% csrf_token %}
+    <input class='button1' type="submit" value="Submit" />
+    <style>
+      body{
+        background: #5E5A80;
+      }
+      h1{
+        background-color: #881888;
+        border: 0px solid;
+        padding: 10px;
+        box-shadow: 0px 5px 8px rgba(0,0,0,0.6);
+        color: white;
+        text-transform: capitalize;
+        font-family: 'Gill Sans', 'Gill Sans MT';
+        text-align: center;
+    }
+
+    form{
+      color: white;
+      font-weight: 700;
+      align: center;
+    }
+    .button1{
+      position: relative;
+      background-color:#FF6700;
+      color: rgb(255, 254, 254);
+      font-weight: 500;
+      border:none;
+      border-radius:50px;
+      height: 40px;
+      width: 150px;
+      cursor: pointer;
+  }
+  .button1:hover {
+    background-color: #a00ceb;
+    box-shadow: #bc82e4 0 6px 8px inset;
+    transform: scale(1.125);
+  }
+
+    </style>
+  </form>
+  </body>
+</html>
